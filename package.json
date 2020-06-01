@@ -1,0 +1,26 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjq990112/LeetCode.git"
+  },
+  "author": "wjq990112",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjq990112/LeetCode/issues"
+  },
+  "homepage": "https://github.com/wjq990112/LeetCode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1"
+  }
+}
