@@ -1,22 +1,22 @@
 /**
  * @file 7. 整数反转
  */
-import reverseInteger from '../7.reverse_integer';
+import reverse from '../7.reverse_integer';
 
 describe('7. 整数反转', () => {
   it('input: 123', () => {
-    expect(reverseInteger(123)).toEqual(321);
+    expect(reverse(123)).toEqual(321);
   });
 
   it('input: -123', () => {
-    expect(reverseInteger(-123)).toEqual(-321);
+    expect(reverse(-123)).toEqual(-321);
   });
 
   it('input: 120', () => {
-    expect(reverseInteger(120)).toEqual(21);
+    expect(reverse(120)).toEqual(21);
   });
 
   it('input: 1534236469', () => {
-    expect(reverseInteger(1534236469)).toEqual(0);
+    expect(reverse(1534236469)).toEqual(0);
   });
 });

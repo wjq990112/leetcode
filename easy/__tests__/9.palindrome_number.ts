@@ -1,18 +1,18 @@
 /**
  * @file 9. 回文数
  */
-import palindromeNumber from '../9.palindrome_number';
+import isPalindrome from '../9.palindrome_number';
 
 describe('9. 回文数', () => {
   it('input: 121', () => {
-    expect(palindromeNumber(121)).toBeTruthy();
+    expect(isPalindrome(121)).toBeTruthy();
   });
 
   it('input: -121', () => {
-    expect(palindromeNumber(-121)).toBeFalsy();
+    expect(isPalindrome(-121)).toBeFalsy();
   });
 
   it('input: 10', () => {
-    expect(palindromeNumber(10)).toBeFalsy();
+    expect(isPalindrome(10)).toBeFalsy();
   });
 });
