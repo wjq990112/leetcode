@@ -2,6 +2,7 @@
  * @file 13. 罗马数字转整数
  */
 export default function romanToInt(s: string): number {
+  let res = 0;
   const map = new Map<string, number>([
     ['E', 0],
     ['I', 1],
@@ -14,7 +15,6 @@ export default function romanToInt(s: string): number {
   ]);
 
   s += 'E';
-  let res = 0;
 
   for (let i = 0, len = s.length - 1; i < len; i++) {
     if ((map.get(s[i]) as number) >= (map.get(s[i + 1]) as number)) {

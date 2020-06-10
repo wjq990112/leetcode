@@ -9,7 +9,7 @@ export default function isValid(s: string): boolean {
   ]);
   const stack = [];
 
-  for (let char of s) {
+  for (const char of s) {
     if (map.has(char)) {
       stack.push(char);
     } else {
