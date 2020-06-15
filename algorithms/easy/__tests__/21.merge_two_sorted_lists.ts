@@ -4,7 +4,7 @@
 import mergeTwoLists, { ListNode } from '../21.merge_two_sorted_lists';
 
 // 构造链表
-const constructList = (arr: Array<number>) => {
+const constructList = (arr: number[]): ListNode | null => {
   let len = arr.length;
   let head = new ListNode();
   if (len) {

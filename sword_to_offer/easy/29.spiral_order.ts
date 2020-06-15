@@ -2,7 +2,7 @@
  * @file 面试题29. 顺时针打印矩阵
  */
 export default function spiralOrder(matrix: number[][]): number[] {
-  let res: Array<number> = [];
+  let res: number[] = [];
   let mtxLen = matrix.length;
 
   if (!mtxLen) {

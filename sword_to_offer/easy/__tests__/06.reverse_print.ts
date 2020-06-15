@@ -4,7 +4,7 @@
 import reversePrint, { ListNode } from '../06.reverse_print';
 
 // 构造链表
-const constructList = (arr: Array<number>) => {
+const constructList = (arr: number[]): ListNode | null => {
   let len = arr.length;
   let head = new ListNode();
   if (len) {
@@ -30,7 +30,7 @@ describe('面试题06. 从尾到头打印链表', () => {
     expect(reversePrint(constructList([1]))).toEqual([1]);
   });
 
-  it('input: [1, 3, 2]', () => {
+  it('input: [1,3,2]', () => {
     expect(reversePrint(constructList([1, 3, 2]))).toEqual([2, 3, 1]);
   });
 });
