@@ -17,7 +17,7 @@ export default function exist(board: string[][], word: string): boolean {
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      if (getPath(board, word, x, y, width, height)) {
+      if (dfs(board, word, x, y, width, height)) {
         return true;
       }
     }
@@ -26,7 +26,7 @@ export default function exist(board: string[][], word: string): boolean {
   return false;
 }
 
-function getPath(
+function dfs(
   board: string[][],
   word: string,
   x: number,
@@ -53,10 +53,10 @@ function getPath(
 
   // 上下左右任意一个字符满足
   let result =
-    getPath(board, word.slice(1), x, y - 1, width, height) ||
-    getPath(board, word.slice(1), x, y + 1, width, height) ||
-    getPath(board, word.slice(1), x - 1, y, width, height) ||
-    getPath(board, word.slice(1), x + 1, y, width, height);
+    dfs(board, word.slice(1), x, y - 1, width, height) ||
+    dfs(board, word.slice(1), x, y + 1, width, height) ||
+    dfs(board, word.slice(1), x - 1, y, width, height) ||
+    dfs(board, word.slice(1), x + 1, y, width, height);
 
   // 还原
   board[y][x] = temp;
