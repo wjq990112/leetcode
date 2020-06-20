@@ -1,7 +1,7 @@
 /**
- * @file 面试题04. 二维数组中的查找
+ * @file 开始之前: 搜索二维矩阵 II
  */
-export default function findNumberIn2DArray(
+export default function searchMatrix(
   matrix: number[][],
   target: number
 ): boolean {
