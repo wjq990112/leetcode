@@ -39,7 +39,7 @@ function dfs(
   }
 
   // 判断是否越界 & 是否与目标字符相等
-  if (x < 0 || x >= width || y < 0 || y >= height) {
+  if (x < 0 || x > width - 1 || y < 0 || y > height - 1) {
     return false;
   }
 
@@ -47,16 +47,17 @@ function dfs(
     return false;
   }
 
+  let str = word.slice(1);
   // 已判断的字符不能重复判断 改为 "-" 避免重复判断
   let temp = board[y][x];
   board[y][x] = '-';
 
   // 上下左右任意一个字符满足
   let result =
-    dfs(board, word.slice(1), x, y - 1, width, height) ||
-    dfs(board, word.slice(1), x, y + 1, width, height) ||
-    dfs(board, word.slice(1), x - 1, y, width, height) ||
-    dfs(board, word.slice(1), x + 1, y, width, height);
+    dfs(board, str, x, y - 1, width, height) ||
+    dfs(board, str, x, y + 1, width, height) ||
+    dfs(board, str, x - 1, y, width, height) ||
+    dfs(board, str, x + 1, y, width, height);
 
   // 还原
   board[y][x] = temp;
