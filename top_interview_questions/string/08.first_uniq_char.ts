@@ -3,12 +3,18 @@
  */
 export default function firstUniqChar(s: string): number {
   let map = new Map();
-  for (let i = 0; i < s.length; i++) {
+  let len = s.length;
+
+  for (let i = 0; i < len; i++) {
     let count = map.get(s[i]) || 0;
     map.set(s[i], count + 1);
   }
-  for (let i = 0; i < s.length; i++) {
-    if (map.get(s[i]) === 1) return i;
+
+  for (let i = 0; i < len; i++) {
+    if (map.get(s[i]) === 1) {
+      return i;
+    }
   }
+
   return -1;
 }
