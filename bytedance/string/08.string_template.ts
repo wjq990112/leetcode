@@ -6,5 +6,6 @@ export default function stringTemplate(str: string, obj: any) {
     let reg = new RegExp('\\$\\{' + i + '\\}', 'g');
     str = str.replace(reg, obj[i]);
   }
+
   return str;
 }
