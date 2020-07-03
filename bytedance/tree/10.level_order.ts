@@ -23,7 +23,7 @@ export class TreeNode {
   }
 }
 
-export default function levelOrder(root: TreeNode | null) {
+export default function levelOrder(root: TreeNode | null): number[] {
   let queue: TreeNode[] = [];
   let res: number[] = [];
   let node = root;
