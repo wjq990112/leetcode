@@ -6,7 +6,7 @@ export default function maxProduct(nums: number[]): number {
   let prevMax = nums[0];
   let res = nums[0];
 
-  for (let i = 1; i < nums.length; i++) {
+  for (let i = 1, len = nums.length; i < len; i++) {
     let element = nums[i];
     let temp1 = prevMin * element;
     let temp2 = prevMax * element;
