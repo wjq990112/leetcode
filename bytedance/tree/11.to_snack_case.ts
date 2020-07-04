@@ -8,10 +8,13 @@ export default function toSnakeCase(obj: any): any {
     let matchArr = (key.match(/[A-z][a-z]*/g) || []).map((item) =>
       item.toLowerCase()
     );
+
     for (let i = 1, len = matchArr.length; i < len; i++) {
       matchArr[i] = '_' + matchArr[i];
     }
+
     let snakeCaseKey = matchArr.join('');
+
     if (obj[key] && typeof obj[key] === 'object') {
       resObj[snakeCaseKey] = toSnakeCase(obj[key]);
     } else {
