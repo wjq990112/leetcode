@@ -1,7 +1,7 @@
 /**
  * @file 字符串: 实现模板字符串
  */
-import stringTemplate from '../08.string_template';
+import stringTemplate from '../string_template';
 
 describe('字符串: 实现模板字符串', () => {
   it('input: "test", {}', () => {

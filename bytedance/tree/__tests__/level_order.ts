@@ -1,7 +1,7 @@
 /**
  * @file 树: 二叉树层次遍历
  */
-import levelOrder, { TreeNode } from '../10.level_order';
+import levelOrder, { TreeNode } from '../level_order';
 
 // 构造二叉树
 const constructTree = (obj: any): TreeNode | null => {

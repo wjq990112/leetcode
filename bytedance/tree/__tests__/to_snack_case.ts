@@ -1,7 +1,7 @@
 /**
  * @file 树: 对象 PascalCase key 转 SnakeCase
  */
-import toSnakeCase from '../11.to_snack_case';
+import toSnakeCase from '../to_snack_case';
 
 describe('树: 对象 PascalCase key 转 SnakeCase', () => {
   it('input: {}', () => {
