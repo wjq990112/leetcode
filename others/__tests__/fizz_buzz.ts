@@ -1,7 +1,7 @@
 /**
  * @file FizzBuzz
  */
-import fizzBuzz from '../1.fizzbuzz';
+import fizzBuzz from '../fizz_buzz';
 
 describe('FizzBuzz', () => {
   it('input: null', () => {
