@@ -1,9 +1,9 @@
 /**
- * @file 键名转译
+ * @file 键名转译-I
  */
-import keyNameTranslator from '../key_name_translator';
+import keyNameTranslator from '../key_name_translator-I';
 
-describe('键名转译', () => {
+describe('键名转译-I', () => {
   it('input: obj = { "a.b": 1, c: 3 }', () => {
     expect(keyNameTranslator({ 'a.b': 1, c: 3 })).toEqual({
       a: { b: 1 },

@@ -1,5 +1,5 @@
 /**
- * @file 键名转译
+ * @file 键名转译-I
  */
 interface ObjType {
   [key: string]: number | ObjType;
