@@ -13,7 +13,7 @@ describe('字符串: 无重复字符的最长子串', () => {
   });
 
   it('input: "pwwkew"', () => {
-    expect(lengthOfLongestSubstring('pwwkew')).toEqual(3)
+    expect(lengthOfLongestSubstring('pwwkew')).toEqual(3);
   });
 
   it('input: ""', () => {
@@ -23,5 +23,4 @@ describe('字符串: 无重复字符的最长子串', () => {
   it('input: " "', () => {
     expect(lengthOfLongestSubstring(" ")).toEqual(1);
   });
-})
-
+});
