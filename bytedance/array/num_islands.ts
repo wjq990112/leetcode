@@ -1,5 +1,5 @@
 /**
- * @file DFS: 岛屿数量
+ * @file 数组: 岛屿数量
  */
 export default function numIslands(grid: string[][]): number {
   let res = 0;
@@ -16,13 +16,13 @@ export default function numIslands(grid: string[][]): number {
     return 0;
   }
 
-  const dfs = (
+  function dfs(
     grid: string[][],
     i: number,
     j: number,
     width: number,
     height: number
-  ): void => {
+  ) {
     if (
       i < 0 ||
       i > width - 1 ||
@@ -39,7 +39,7 @@ export default function numIslands(grid: string[][]): number {
     dfs(grid, i - 1, j, width, height);
     dfs(grid, i, j + 1, width, height);
     dfs(grid, i, j - 1, width, height);
-  };
+  }
 
   for (let j = 0; j < height; j++) {
     for (let i = 0; i < width; i++) {

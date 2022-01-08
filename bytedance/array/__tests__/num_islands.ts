@@ -1,9 +1,9 @@
 /**
- * @file DFS: 岛屿数量
+ * @file 数组: 岛屿数量
  */
 import numIslands from '../num_islands';
 
-describe('DFS: 岛屿数量', () => {
+describe('数组: 岛屿数量', () => {
   it(`input: [
                ['1','1','1','1','0'],
                ['1','1','0','1','0'],
